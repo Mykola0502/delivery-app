@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-// import phonebook from 'images/phonebook.png';
+import shop from 'images/shop.jpg';
 
 const styles = {
   container: {
@@ -22,7 +22,7 @@ const Home = () => {
     <div style={styles.container}>
       <h1 style={styles.title}>Welcome to our Shop!</h1>
       <Link to="/shop">
-        <img src={''} alt="Shop" width="128" />
+        <img src={shop} alt="Shop" style={{ maxWidth: '350px' }} />
       </Link>
     </div>
   );
