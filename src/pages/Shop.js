@@ -3,6 +3,8 @@ import {
   // useEffect
 } from 'react';
 import { Loader } from 'components/Loader';
+import { ShopList } from 'components/ShopList';
+import { Food } from 'components/Food';
 
 const Shop = () => {
   //   const [movies, setMovies] = useState([]);
@@ -29,9 +31,10 @@ const Shop = () => {
   //   }, []);
 
   return (
-    <main>
-      <h1>Shop</h1>
+    <>
       {loading && <Loader />}
+      <ShopList />
+      <Food />
       {/* {movies && <MovieList movies={movies} />} */}
       {/* {error && (
         <h2>
@@ -39,7 +42,7 @@ const Shop = () => {
           <p>No films found, try again😢</p>
         </h2>
       )} */}
-    </main>
+    </>
   );
 };
 

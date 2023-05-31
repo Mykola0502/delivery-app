@@ -3,12 +3,13 @@ import shop from 'images/shop.jpg';
 
 const styles = {
   container: {
+    width: '100%',
     minHeight: 'calc(100vh - 50px)',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    gap: 50,
+    gap: 'var(--indent)',
   },
   title: {
     fontWeight: 500,
