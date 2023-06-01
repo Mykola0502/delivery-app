@@ -4,7 +4,7 @@ export const FoodWrapper = styled.ul`
   padding: 20px 50px;
   /* max-width: 250px; */
   width: 100%;
-  height: 100vh;
+  height: 78vh;
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
@@ -27,13 +27,18 @@ export const FoodItem = styled.li`
   gap: var(--indent);
   outline: 2px solid var(--border-color);
   border-radius: 10px;
+
   /* text-align: center; */
   /* font-size: 20px; */
   /* font-weight: 700; */
 
+  div {
+    flex-grow: 1;
+  }
+
   img {
     width: 100%;
-    height: 100px;
+    object-fit: cover;
   }
 `;
 
@@ -44,6 +49,9 @@ export const FoodBtn = styled.button`
   border-radius: 10px;
   background-color: #9df2ec;
   cursor: pointer;
+
+  transition: background-color var(--transition-function),
+    box-shadow var(--transition-function);
 
   &:hover,
   &:focus {

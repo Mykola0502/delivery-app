@@ -16,12 +16,6 @@ export const ShopListWrapper = styled.div`
 
 export const ListItem = styled.li`
   margin-top: 15px;
-  padding: 15px 5px;
-  border: 2px solid var(--border-color);
-  border-radius: 10px;
-  text-align: center;
-  font-size: 20px;
-  font-weight: 700;
 
   & + & {
     margin-top: 15px;
