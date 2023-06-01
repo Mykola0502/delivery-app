@@ -63,47 +63,47 @@ const shopList = [
   },
 ];
 
-const foodList = [
-  {
-    id: '1',
-    name: 'Hot Dog',
-    price: 35,
-    imgURL:
-      'https://upload.wikimedia.org/wikipedia/commons/b/b1/Hot_dog_with_mustard.png',
-  },
-  {
-    id: '2',
-    name: 'Hot Dog Big',
-    price: 45,
-    imgURL:
-      'https://food.fnr.sndimg.com/content/dam/images/food/plus/fullset/2020/06/08/0/FNM_070120-Grilled-Hot-Dogs_s4x3.jpg.rend.hgtvcom.406.406.suffix/1591625198177.jpeg',
-  },
-  {
-    id: '3',
-    name: 'Hot Dog Small',
-    price: 30,
-    imgURL:
-      'https://img.freepik.com/free-vector/fast-food-sticker-design-with-hot-dog-isolated_1308-67129.jpg?w=2000',
-  },
-  {
-    id: '4',
-    name: 'Hot Dog ',
-    price: 30,
-    imgURL: '',
-  },
-  {
-    id: '5',
-    name: 'Hot Dog ',
-    price: 30,
-    imgURL: '',
-  },
-  {
-    id: '6',
-    name: 'Hot Dog ',
-    price: 30,
-    imgURL: '',
-  },
-];
+// const foodList = [
+//   {
+//     id: '1',
+//     name: 'Hot Dog',
+//     price: 35,
+//     imgURL:
+//       'https://upload.wikimedia.org/wikipedia/commons/b/b1/Hot_dog_with_mustard.png',
+//   },
+//   {
+//     id: '2',
+//     name: 'Hot Dog Big',
+//     price: 45,
+//     imgURL:
+//       'https://food.fnr.sndimg.com/content/dam/images/food/plus/fullset/2020/06/08/0/FNM_070120-Grilled-Hot-Dogs_s4x3.jpg.rend.hgtvcom.406.406.suffix/1591625198177.jpeg',
+//   },
+//   {
+//     id: '3',
+//     name: 'Hot Dog Small',
+//     price: 30,
+//     imgURL:
+//       'https://img.freepik.com/free-vector/fast-food-sticker-design-with-hot-dog-isolated_1308-67129.jpg?w=2000',
+//   },
+//   {
+//     id: '4',
+//     name: 'Hot Dog ',
+//     price: 30,
+//     imgURL: '',
+//   },
+//   {
+//     id: '5',
+//     name: 'Hot Dog ',
+//     price: 30,
+//     imgURL: '',
+//   },
+//   {
+//     id: '6',
+//     name: 'Hot Dog ',
+//     price: 30,
+//     imgURL: '',
+//   },
+// ];
 
 const Shop = () => {
   //   const [movies, setMovies] = useState([]);
@@ -111,6 +111,17 @@ const Shop = () => {
     loading,
     // setLoading
   ] = useState(false);
+
+  const [foodList, setFoodList] = useState([]);
+
+  const handleClickShopBtn = shop => {
+    console.log(shop);
+    setFoodList(shop.food);
+  };
+
+  // const handleClickShopBtn = id => {
+  //   console.log('here will be go to beckend and get chosen shops goods');
+  // };
 
   //   const [error, setError] = useState(null);
 
@@ -136,7 +147,7 @@ const Shop = () => {
   return (
     <>
       {loading && <Loader />}
-      <ShopList shops={shopList} />
+      <ShopList shops={shopList} onClick={handleClickShopBtn} />
       <Food food={foodList} />
       {/* {movies && <MovieList movies={movies} />} */}
       {/* {error && (
