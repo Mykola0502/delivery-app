@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_homework_template=self.webpackChunkreact_homework_template||[]).push([[707],{707:function(e,t,a){a.r(t);var r=a(439),n=a(791),s=a(129),c=a(184);t.default=function(){var e=(0,n.useState)(!1),t=(0,r.Z)(e,1)[0];return(0,c.jsxs)("main",{children:[(0,c.jsx)("h1",{children:"Shopping Cart"}),t&&(0,c.jsx)(s.a,{})]})}}}]);
+//# sourceMappingURL=707.9af27a83.chunk.js.map
