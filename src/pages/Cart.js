@@ -5,7 +5,10 @@ import {
 import { Loader } from 'components/Loader';
 
 const ShoppingCart = () => {
-  const [loading, setLoading] = useState(false);
+  const [
+    loading,
+    // setLoading
+  ] = useState(false);
 
   return (
     <main>
